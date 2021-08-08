@@ -32,4 +32,9 @@ public class Vector{
     public int hashCode() {
         return Arrays.hashCode(vector);
     }
+
+    @Override
+    public String toString() {
+        return "Vector{" + Arrays.toString(vector) + '}';
+    }
 }
