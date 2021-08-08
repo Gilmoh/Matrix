@@ -15,4 +15,9 @@ class VectorTest {
 
         assertThrows(RuntimeException.class, () -> Vector.add(new Vector(1,2,3), new Vector(1,1)));
     }
+
+    @Test
+    void testToString() {
+        assertEquals("Vector{[1.0, 2.0, 3.0]}", new Vector(1,2,3).toString());
+    }
 }
